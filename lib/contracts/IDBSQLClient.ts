@@ -37,6 +37,7 @@ export type ConnectionOptions = {
   host: string;
   port?: number;
   path: string;
+  https?: boolean;
   userAgentEntry?: string;
   socketTimeout?: number;
   proxy?: ProxyOptions;

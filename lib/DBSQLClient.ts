@@ -111,7 +111,7 @@ export default class DBSQLClient extends EventEmitter implements IDBSQLClient, I
       host: options.host,
       port: options.port || 443,
       path: prependSlash(options.path),
-      https: true,
+      https: options.https !== undefined ? options.https : true,
       socketTimeout: options.socketTimeout,
       proxy: options.proxy,
       headers: {
